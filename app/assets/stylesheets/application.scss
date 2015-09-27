@@ -62,9 +62,8 @@ div.container {
 	width: 600px;
 	margin: 0 auto;
 	border: 1px solid grey;
-	margin-bottom: 200px;
+	margin-bottom: 50px;
 	border-radius: 10px;
-	box-shadow: 7px 10px 23px 0px rgba(0,0,0,0.58);
 }
 
 .buttons {
@@ -73,6 +72,18 @@ div.container {
 	margin-top: 150px;
 }
 
+.row {
+
+}
+
+.col-md-4 {
+	width: 33%;
+	height: 200px;
+	border: 1px solid grey;
+	margin-bottom: 50px;
+	border-radius: 10px;
+
+}
 
 
 
