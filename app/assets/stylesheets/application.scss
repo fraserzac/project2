@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 body {
 	text-align: center;	
 }
@@ -10,7 +11,16 @@ div.container-fluid {
 }
 
 .login_div {
-	text-align: right;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	border: 1px solid grey;
+	width: 45%;
+	height: 300px;
+	padding-top: 50px;
+}
+
+.top_div {
 }
 
 
@@ -64,6 +74,7 @@ div.container {
 	border: 1px solid grey;
 	margin-bottom: 50px;
 	border-radius: 10px;
+	background-color: white;
 }
 
 .buttons {
@@ -82,8 +93,8 @@ div.container {
 	border: 1px solid grey;
 	margin-bottom: 50px;
 	border-radius: 10px;
-
 }
+
 
 
 
