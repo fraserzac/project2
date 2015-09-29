@@ -147,3 +147,17 @@ var leds = [
   cost: 39.95
 }
 ];
+
++$('#lights').val();
++$('#hours').val();
+
+
+
+
+
+
+
+
+
+
+
