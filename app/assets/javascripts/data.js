@@ -148,13 +148,17 @@ var leds = [
 }
 ];
 
-+$('#lights').val();
-+$('#hours').val();
 
+//show the result of the lights field times the hours field
+// result: function(lights, hours) {
+//   this.result.push({
+//     light: lights,
+//     hours: hours,
+//   })
+//   return lights * hours;
+// };
 
-
-
-
+// console.log(result)
 
 
 

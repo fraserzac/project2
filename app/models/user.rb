@@ -11,4 +11,9 @@
 #
 
 class User < ActiveRecord::Base
+	has_secure_password
+
+	#validations
+	validates :email, :presence => true
+	validates :name, :presence => true, :uniqueness => true, :length => { :minimum => 3 }
 end

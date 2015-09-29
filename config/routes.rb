@@ -5,6 +5,9 @@ Rails.application.routes.draw do
  	post '/login' => 'session#create'
   	delete '/login' => 'session#destroy', as: 'logout'
 
+  	get '/contacts', to: 'contacts#new', via: 'get'
+	resources "contacts", only: [:new, :create]
+
  	resources :users
 
 
