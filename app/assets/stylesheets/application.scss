@@ -85,6 +85,9 @@ div.container {
 }
 
 .row {
+	height: 400%;
+	width: 48%;
+	border: 1px solid grey;
 
 }
 
@@ -98,6 +101,11 @@ div.container {
 
 canvas { 
 	background-color : #eee;
+}
+
+.D3 {
+
+	overflow: none;
 }
 
 
