@@ -25,7 +25,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home <span class="sr-only"></span></a></li>
         <li><a href="/users/new">Account </a></li>
-        <li><a href="/users/followed">Lights </a></li>
+        <li><a href="/">Lights </a></li>
         <li><a href="/contacts/new">Contact Us </a></li>
       </ul>
       <form class="navbar-form navbar-left" role="search">
@@ -43,6 +43,13 @@
 </nav>
 
 <%= yield %>
+
+<div id="D3">
+  <button data-suburb="haymarket">Haymarket</button>
+  <button data-suburb="surryhills" class="active">Surry Hills</button>
+  <button data-suburb="clear" class="active">Clear</button>
+</div>
+
   
 </body>
 </html>

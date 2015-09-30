@@ -11,3 +11,8 @@
 /log/*
 !/log/.keep
 /tmp
+
+#ignore mailer
+/.env
+.env
+/Procfile
