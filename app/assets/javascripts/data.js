@@ -206,8 +206,13 @@ $(document).ready(function () {
     if (halogenObj) {
       updateHalogenStats();
     }
+    
     if (ledObj) {
       updateLEDStats();
+    }
+
+    if (halogenObj && ledObj) {
+      updateDifferenceStats();
     }
     // $('.halogen_render', '.costperlight').html(halogenObj.cost);
 
@@ -276,7 +281,7 @@ $(document).ready(function () {
     ledObj = info;
 
     updateLEDStats();
-    
+
     console.log(info);
   })
 });
@@ -284,7 +289,8 @@ $(document).ready(function () {
 var updateHalogenStats = function() {
     halogenObj.yearlyconsumption = halogenObj.wattage * (365 * (+$('#Hours').val()));
     halogenObj.yearlypowercost = halogenObj.yearlyconsumption * $KWH_Cost;
-    console.log(halogenObj.yearlypowercost);
+    
+
     $('.halogen_render', '.lifespan').html(halogenObj.life);
     $('.halogen_render', '.costperlight').html(halogenObj.cost);
     $('.halogen_render', '.powerperlight').html(halogenObj.wattage);
@@ -294,4 +300,8 @@ var updateHalogenStats = function() {
 
 var updateLEDStats = function() {
 
-}
+};
+
+var updateDifferenceStats = function() {
+  //$('.difference', '.lifespan').html(halogenObj.life - ledObj.life);
+};
