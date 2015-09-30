@@ -1,58 +1,76 @@
 <h2>Lighting Calculator</h2>
 
-</div>
-<div class="ajax">
-   <div class="buttons">
-   <p><input id="lights" type="light_field" placeholder="Number of lights"></p>
-   <p><input id="hours" type="Hours" placeholder="Hours"></p>
-   <button class="submit">Submit</button>
-   
-     <select id="light" class="selectpicker">
-       <option>Current Light</option>
-       <option id="hal01">240V 25W Candle Halogen</option>
-       <option id="hal02">240V 25W Classic A Halogen</option>
-       <option id="hal03">12V 20W MR16 GU5.3 Halogen</option>
-       <option id="hal04">240V 40W Classic A Halogen</option>
-       <option id="hal05">240V 40W R63 Halogen</option>
-       <option id="hal06">240V 25V Candle Halogen</option>
-       <option id="hal07">240V 40W Classic A Halogen</option>
-       <option id="hal08">12V 20W MR16 GU5.3 Halogen</option>
-       <option id="hal09">240V 50W Classic A Halogen</option>
-       <option id="hal010">12V 50W MR16 GU5.3 Halogen</option>
+  <div class="ajax">
+    <div class="buttons">
 
-     </select>
- 
-       <select id="led" class="selectpicker">
-       <option>New Light</option>
-       <option id="led01">240V 4W Candle LED</option>
-       <option id="led02">240V 10W Classic A LED</option>
-       <option id="led03">240V 6.5W Classic A LED</option>
-       <option id="led04">12V 6.5W MR16 GU5.3 LED</option>
-       <option id="led05">240V 8W R63 LED</option>
-       <option id="led06">240V 8W R63 LED</option>
-       <option id="led07">240V 8W PAR16 LED</option>
-       <option id="led08">240V 4W PAR16 LED'</option>
-       <option id="led09">240V 13.5W PAR30 LED</option>
-       <option id="led010">240V 18W PAR38 LED</option>
-       <option id="led012">12V 7W MR16 GU5.3 LED</option>
-       <option id="led012">12V 18W AR111 LED</option>
-       
-     </select>
-     </div>
+  <%= form_tag '/calculate' do %>
 
-   </div>
+            <% label_tag :lights %>
+            <%= number_field_tag :Number_lights, nil, :placeholder => 'numberoflights', :value => '25' %>
+        
+            <% label_tag :hours %>
+            <%= number_field_tag :Hours, nil, :placeholder => 'Hours', :value => '110' %>
 
-   </div>
-   
- </div>
+        <% submit_tag "Calculate" %>
 
+    <% end %>
+
+    <p><input id="lights" type="number" placeholder="Number of lights" value=10></p>
+    <p><input id="hours" type="number" placeholder="Hours" value=10></p>
+    
+      <select class="selectpicker halogen">
+        <option>Please select...</option>
+        <!--option id="hal01">240V 25W Candle Halogen</option>
+        <option>240V 25W Classic A Halogen</option>
+        <option>12V 20W MR16 GU5.3 Halogen</option>
+        <option>240V 40W Classic A Halogen</option>
+        <option>240V 40W R63 Halogen</option>
+        <option>240V 25V Candle Halogen</option>
+        <option>240V 40W Classic A Halogen</option>
+        <option>12V 20W MR16 GU5.3 Halogen</option>
+        <option>240V 50W Classic A Halogen</option>
+        <option>12V 50W MR16 GU5.3 Halogen</option-->
+
+      </select>
+      <br>
+  
+        <select class="selectpicker led">
+        <option>Please select...</option>
+        <!--<option id="led01">240V 4W Candle LED</option>
+        <option>240V 10W Classic A LED</option>
+        <option>240V 6.5W Classic A LED</option>
+        <option>12V 6.5W MR16 GU5.3 LED</option>
+        <option>240V 8W R63 LED</option>
+        <option>240V 8W R63 LED</option>
+        <option>240V 8W PAR16 LED</option>
+        <option>240V 4W PAR16 LED'</option>
+        <option>240V 13.5W PAR30 LED</option>
+        <option>240V 18W PAR38 LED</option>
+        <option>12V 7W MR16 GU5.3 LED</option>
+        <option>12V 18W AR111 LED</option>-->
+        
+      </select>
+
+    <div class="result">
+
+      <p class="lifespan"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
+      <p class="costperlight"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
+      <p class="powerperlight"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
+      <p class="yearlyconsumption"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
+      <p class="yearlypowercost"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
+
+      </div>
+  
+      </div>
+
+    </div>
     
   </div>
+
+  <div id="main"></div>
 
    <div class="row">
     <div class="col-md-4">something</div>
     <div class="col-md-4">something</div>
     <div class="col-md-4">API</div>
-  </div> 
-
   </div>
