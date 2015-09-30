@@ -6,10 +6,10 @@
   <%= form_tag '/calculate' do %>
 
             <% label_tag :Number_lights %>
-            <%= number_field_tag :Number_lights, nil, :placeholder => 'numberoflights', :value => '25' %>
+            <%= number_field_tag :Number_lights, nil, :placeholder => 'numberoflights', :value => 25 %>
         
             <% label_tag :Hours %>
-            <%= number_field_tag :Hours, nil, :placeholder => 'Hours', :value => '10' %>
+            <%= number_field_tag :Hours, nil, :placeholder => 'Hours', :value => 10 %>
 
         <% submit_tag "Calculate" %>
 
