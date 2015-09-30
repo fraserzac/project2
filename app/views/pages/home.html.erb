@@ -5,31 +5,22 @@
 
   <%= form_tag '/calculate' do %>
 
-            <% label_tag :lights %>
+            <% label_tag :Number_lights %>
             <%= number_field_tag :Number_lights, nil, :placeholder => 'numberoflights', :value => '25' %>
         
-            <% label_tag :hours %>
-            <%= number_field_tag :Hours, nil, :placeholder => 'Hours', :value => '110' %>
+            <% label_tag :Hours %>
+            <%= number_field_tag :Hours, nil, :placeholder => 'Hours', :value => '10' %>
 
         <% submit_tag "Calculate" %>
 
     <% end %>
 
-    <p><input id="lights" type="number" placeholder="Number of lights" value=10></p>
-    <p><input id="hours" type="number" placeholder="Hours" value=10></p>
+    <!-- <p><input id="lights" type="number" placeholder="Number of lights" value=10></p> -->
+    <!-- <p><input id="hours" type="number" placeholder="Hours" value=10></p> -->
     
       <select class="selectpicker halogen">
         <option>Please select...</option>
-        <!--option id="hal01">240V 25W Candle Halogen</option>
-        <option>240V 25W Classic A Halogen</option>
-        <option>12V 20W MR16 GU5.3 Halogen</option>
-        <option>240V 40W Classic A Halogen</option>
-        <option>240V 40W R63 Halogen</option>
-        <option>240V 25V Candle Halogen</option>
-        <option>240V 40W Classic A Halogen</option>
-        <option>12V 20W MR16 GU5.3 Halogen</option>
-        <option>240V 50W Classic A Halogen</option>
-        <option>12V 50W MR16 GU5.3 Halogen</option-->
+
 
       </select>
       <br>
@@ -53,12 +44,40 @@
 
     <div class="result">
 
-      <p class="lifespan"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
-      <p class="costperlight"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
-      <p class="powerperlight"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
-      <p class="yearlyconsumption"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
-      <p class="yearlypowercost"><span class="halogen_render"></span><span class="leds_render"></span><span class="difference"></span></p>
+      <p class="lifespan">
+        Lifespan: 
+        <span class="halogen_render"></span>
+        <span class="leds_render"></span>
+        <span class="difference"></span>
+      </p>
 
+      <p class="costperlight">
+        Cost Per Light: 
+        <span class="halogen_render"></span>
+        <span class="leds_render"></span>
+        <span class="difference"></span>
+      </p>
+
+      <p class="powerperlight">
+        Power Per Light: 
+        <span class="halogen_render"></span>
+        <span class="leds_render"></span>
+        <span class="difference"></span>
+      </p>
+
+      <p class="yearlyconsumption">
+        Yearly Consumption: 
+        <span class="halogen_render"></span>
+        <span class="leds_render"></span>
+        <span class="difference"></span>
+      </p>
+      
+      <p class="yearlypowercost">
+        Yearly Power Cost: 
+        <span class="halogen_render"></span>
+        <span class="leds_render"></span>
+        <span class="difference"></span>
+      </p>
       </div>
   
       </div>
@@ -70,9 +89,4 @@
 <div class="D3">
     <h3>Working Chart</h3>
     <canvas id="rice" width="550" height="350"></canvas>
-
-
-
-
-
-
+</div>
