@@ -69,12 +69,13 @@ div.container {
 
 .ajax {
 	height: 400px;
-	width: 600px;
-	margin: 0 auto;
+	width: 48%;
+	padding: 20px;
 	border: 1px solid grey;
 	margin-bottom: 50px;
 	border-radius: 10px;
 	background-color: white;
+	float: left;
 }
 
 .buttons {
@@ -95,9 +96,9 @@ div.container {
 	border-radius: 10px;
 }
 
-
-
-
+canvas { 
+	background-color : #eee;
+}
 
 
 .bar {
@@ -117,6 +118,10 @@ button {
 button.active {
     background: #16161d;
 }
+
+
+
+
 
 
 
