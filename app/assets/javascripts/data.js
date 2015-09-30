@@ -241,4 +241,21 @@ $(document).ready(function () {
     ledObj = info;
     console.log(info);
   })
+<<<<<<< HEAD
 });
+=======
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 0496cf72eb017ba0a8290f7c9c583e52b6ff33c3
