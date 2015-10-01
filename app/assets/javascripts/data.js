@@ -161,12 +161,7 @@ var leds = [
   var $KWH_Cost = 0.18;
 
   // declare array object values wattage cost and life
-  // var $halogenwattage = lights.wattage;
-  // var $ledswattage = leds.wattage;
-  // var $halogenlife = lights.life;
-  // var $ledlife = leds.life;
-  // var $halogencost = lights.cost;
-  // var $ledcost = leds.cost;
+             
   var halogenObj;
   var ledObj;
   var difference;
@@ -310,7 +305,7 @@ var updateDifferenceStats = function() {
   $('.difference', '.lifespan').html(halogenObj.life - ledObj.life);
   $('.difference', '.costperlight').html(halogenObj.cost - ledObj.cost);
   $('.difference', '.powerperlight').html(halogenObj.wattage - ledObj.wattage);
-  $('.difference', '.yearlyconsumption').html(halogenObj.yearlyconsumption - ledObj.yearlyconsumption);
+  $('.difference', '.yearlyconsumption').html( Math.round ( ( halogenObj.yearlyconsumption - ledObj.yearlyconsumption ) * 100 )/ 100 );
   $('.difference', '.yearlyemissions').html( Math.round( halogenObj.yearlyemissions - ledObj.yearlyemissions * 100 ) / 100 );
-  $('.difference', '.yearlypowercost').html(halogenObj.yearlypowercost - ledObj.yearlypowercost);
+  $('.difference', '.yearlypowercost').html( Math.round( halogenObj.yearlypowercost - ledObj.yearlypowercost * 100 ) / 100 );
 };

@@ -37,7 +37,6 @@ div.container-fluid {
 	margin: 0 auto;
 	margin-top: 100px;
 	text-align: center;
-	border: 1px solid grey;
 	width: 45%;
 	height: 300px;
 	padding-top: 50px;
@@ -201,20 +200,31 @@ span.halogen_render, span.leds_render, span.difference {
 }
 
 .lifespan {
+
 	background: #278bd2;
 }
 .costperlight {
+
 	background: #e8074b;
 }
 .powerperlight {
+	
 	background: #FFC84A;
 }
 .yearlyconsumption {
+
 	background: #FE8900;
 }
 .yearlyemissions {
+
 	background: #0ec2a7;
 }
 .yearlypowercost {
+
 	background: #1c4a59;
+}
+
+.lifespan:hover, .costperlight:hover, .yearlyconsumption:hover, .powerperlight:hover, .yearlyemissions:hover, .yearlypowercost:hover {
+	background: #1c4a59;
+
 }
