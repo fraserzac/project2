@@ -1,9 +1,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 body {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-collapse {
+	border-bottom: 2px solid grey;
+}
+
+.navbar-collapse, .navbar-brand, .container-fluid {
+	background-color: aquamarine;
+}
+
+.title {
+    border-bottom: 2px solid grey;
+    width: 300px;
+  	margin: 0 auto;
+}
+
+.contact_us {
+	width: 45%;
+	height: 300px;
+	text-align: center;
+	display: inline-block;
 }
 
 div.container-fluid {
@@ -70,18 +93,12 @@ div.container {
 .ajax {
 	height: 400px;
 	width: 48%;
-	padding: 20px;
-	border: 1px solid grey;
+	margin-left: 100px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 10px;
 	background-color: white;
 	float: left;
-}
-
-.buttons {
-	float: left;
-	margin: 20px;
-	margin-top: 150px;
 }
 
 .row {
@@ -102,6 +119,7 @@ div.container {
 canvas { 
 	background-color : white;
 	border-radius: 10px;
+	margin-right: 50px;
 }
 
 .D3 {
@@ -149,7 +167,6 @@ select, .selectpicker, input, p {
 	float: left;
 	clear: both;
 	line-height: 40px;
-
 }
 
 input[type="number"] {
@@ -181,8 +198,8 @@ span.halogen_render, span.leds_render, span.difference {
 	height: 40px;
 	line-height: 20px;
 	color: white;
-
 }
+
 .lifespan {
 	background: #278bd2;
 }

@@ -284,6 +284,8 @@ var updateHalogenStats = function() {
     $('.halogen_render', '.yearlyconsumption').html(halogenObj.yearlyconsumption);
     $('.halogen_render', '.yearlyemissions').html(halogenObj.yearlyemissions);
     $('.halogen_render', '.yearlypowercost').html(halogenObj.yearlypowercost);
+
+    receiveData();
 };
 
 var updateLEDStats = function() {
