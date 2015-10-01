@@ -192,11 +192,10 @@ p {
 	line-height: 40px;
 	position: relative;
 	padding-left: 10px;
-	border: 1px solid black;
 }
 span.halogen_render, span.leds_render, span.difference {
 	top: 0;
-	border: 1px solid black;
+	border-left: 10px solid white;
 	height: 40px;
 	line-height: 20px;
 	color: white;
