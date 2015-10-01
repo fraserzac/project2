@@ -1,30 +1,3 @@
-// var data = {
-//     labels: ["January", "February", "March", "April", "May", "June", "July"],
-//     datasets: [
-//         {
-//             label: "My First dataset",
-//             fillColor: "rgba(220,220,220,0.2)",
-//             strokeColor: "rgba(220,220,220,1)",
-//             pointColor: "rgba(220,220,220,1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(220,220,220,1)",
-//             data: [65, 59, 80, 81, 56, 55, 40]
-//         },
-//         {
-//             label: "My Second dataset",
-//             fillColor: "rgba(151,187,205,0.2)",
-//             strokeColor: "rgba(151,187,205,1)",
-//             pointColor: "rgba(151,187,205,1)",
-//             pointStrokeColor: "#fff",
-//             pointHighlightFill: "#fff",
-//             pointHighlightStroke: "rgba(151,187,205,1)",
-//             data: [28, 48, 40, 19, 86, 27, 90]
-//         }
-//     ]
-// };
-
-
 var receiveData = function () {
   // Make an array of labels
   var labels = [ "Lifespan", "Cost Per light", "Power Per Light", "Yearly Consumption", "Yearly Emissions", "Cost"]
@@ -49,8 +22,8 @@ var receiveData = function () {
     datasets: [
       {
         label: "Halogen",
-        fillColor: "rgba(220,220,220,1)",
-        strokeColor: "rgba(220,220,220,1)",
+        fillColor: "#999",
+        strokeColor: "#999",
         pointColor: "rgba(220,220,220,1)",
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",
@@ -59,8 +32,8 @@ var receiveData = function () {
       },
       {
         label: "LED",
-        fillColor: "rgba(151,187,205,1)",
-        strokeColor: "rgba(151,187,205,1)",
+        fillColor: "#0ec2a7",
+        strokeColor: "#0ec2a7",
         pointColor: "rgba(151,187,205,1)",
         pointStrokeColor: "#fff",
         pointHighlightFill: "#fff",

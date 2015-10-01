@@ -85,7 +85,7 @@
 			scaleLineWidth: 1,
 
 			// Boolean - Whether to show labels on the scale
-			scaleShowLabels: true,
+			scaleShowLabels: false, // changed this
 
 			// Interpolated JS string - can access value
 			scaleLabel: "<%=value%>",
