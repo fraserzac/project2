@@ -49,7 +49,7 @@ var receiveData = function () {
     datasets: [
       {
         label: "Halogen",
-        fillColor: "rgba(220,220,220,0.2)",
+        fillColor: "rgba(39,139,210,0.5)",
         strokeColor: "rgba(220,220,220,1)",
         pointColor: "rgba(220,220,220,1)",
         pointStrokeColor: "#fff",
