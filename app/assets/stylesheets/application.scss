@@ -1,9 +1,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 body {
 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-collapse {
+	border-bottom: 2px solid grey;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-collapse, .navbar-brand, .container-fluid {
+	background-color: aquamarine;
+}
+
+.title {
+    border-bottom: 2px solid grey;
+    width: 300px;
+  	margin: 0 auto;
+}
+
+.contact_us {
+	width: 45%;
+	height: 300px;
+	text-align: center;
+	display: inline-block;
 }
 
 div.container-fluid {
@@ -14,7 +38,6 @@ div.container-fluid {
 	margin: 0 auto;
 	margin-top: 100px;
 	text-align: center;
-	border: 1px solid grey;
 	width: 45%;
 	height: 300px;
 	padding-top: 50px;
@@ -70,21 +93,18 @@ div.container {
 .ajax {
 	height: 400px;
 	width: 48%;
-	padding: 20px;
-	border: 1px solid grey;
+	margin-left: 100px;
+	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 10px;
 	background-color: white;
 	float: left;
 }
 
-.buttons {
-	float: left;
-	margin: 20px;
-	margin-top: 150px;
-}
-
 .row {
+	height: 400%;
+	width: 48%;
+	border: 1px solid grey;
 
 }
 
@@ -97,7 +117,14 @@ div.container {
 }
 
 canvas { 
-	background-color : #eee;
+	background-color : white;
+	border-radius: 10px;
+	margin-right: 50px;
+}
+
+.D3 {
+
+	overflow: none;
 }
 
 
@@ -140,7 +167,6 @@ select, .selectpicker, input, p {
 	float: left;
 	clear: both;
 	line-height: 40px;
-
 }
 
 input[type="number"] {
@@ -174,8 +200,8 @@ span.halogen_render, span.leds_render, span.difference {
 	height: 40px;
 	line-height: 20px;
 	color: white;
-
 }
+
 .lifespan {
 
 	background: #278bd2;
@@ -199,6 +225,11 @@ span.halogen_render, span.leds_render, span.difference {
 .yearlypowercost {
 
 	background: #1c4a59;
+}
+
+.lifespan:hover, .costperlight:hover, .yearlyconsumption:hover, .powerperlight:hover, .yearlyemissions:hover, .yearlypowercost:hover {
+	background: #1c4a59;
+
 }
 
 .lifespan:hover, .costperlight:hover, .yearlyconsumption:hover, .powerperlight:hover, .yearlyemissions:hover, .yearlypowercost:hover {
