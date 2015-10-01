@@ -280,8 +280,9 @@ var updateHalogenStats = function() {
     $('.halogen_render', '.yearlyemissions').html(halogenObj.yearlyemissions);
     $('.halogen_render', '.yearlypowercost').html(halogenObj.yearlypowercost);
 
+
     receiveData();
-};
+
 
 var updateLEDStats = function() {
     ledObj.yearlyconsumption = Math.round( ledObj.wattage * (365 * (+$('#Hours').val()) * +$('#Number_lights').val() ) / 1000 * 100 ) / 100;
