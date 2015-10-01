@@ -219,7 +219,6 @@ $(document).ready(function () {
     calculateEnergyUsage();
   });
 
-
   // Sets the Halogen options list from the array
   for (var i = 0; i < lights.length; i++) {
     var light = lights[i];
@@ -227,7 +226,6 @@ $(document).ready(function () {
     $option.data('index', i);
     $option.appendTo('.halogen');
   }
-
 
   // Listens for changes on class Halogen, stores index
   $('.halogen').on('change', function () {
@@ -261,15 +259,14 @@ $(document).ready(function () {
 
     updateLEDStats();
     updateDifferenceStats();
-
     //console.log(info);
   })
-});
+}); 
 
 
 var updateHalogenStats = function() {
     halogenObj.yearlyconsumption = Math.round( halogenObj.wattage * (365 * (+$('#Hours').val()) * +$('#Number_lights').val() ) / 1000 * 100 ) / 100;
-    halogenObj.yearlyemissions = Math.round( $CO2_AVG * halogenObj.yearlyconsumption * 1000 * 100 ) / 100;
+    halogenObj.yearlyemissions = Math.round( ( $CO2_AVG * halogenObj.yearlyconsumption * 1000 ) * 100 ) / 100;
     halogenObj.yearlypowercost = Math.round( halogenObj.yearlyconsumption * $KWH_Cost * 100 ) / 100;
     
 
@@ -288,9 +285,8 @@ var updateHalogenStats = function() {
 var updateLEDStats = function() {
   console.log( "UPDATE LED STATS CALLED" )
     ledObj.yearlyconsumption = Math.round( ledObj.wattage * (365 * (+$('#Hours').val()) * +$('#Number_lights').val() ) / 1000 * 100 ) / 100;
-    ledObj.yearlyemissions = Math.round( $CO2_AVG * ledObj.yearlyconsumption * 1000 * 100 ) / 100;
+    ledObj.yearlyemissions = Math.round( ( $CO2_AVG * ledObj.yearlyconsumption * 1000 ) * 100 ) / 100;
     ledObj.yearlypowercost = Math.round( ledObj.yearlyconsumption * $KWH_Cost * 100 ) / 100;
-
 
     $('.leds_render', '.lifespan').html(ledObj.life);
     $('.leds_render', '.costperlight').html(ledObj.cost);
@@ -308,13 +304,15 @@ var updateDifferenceStats = function() {
   //difference.life;
   //difference.yearlyconsumption = ( halogenObj.wattage * (365 * (+$('#Hours').val())) ) - ( ledObj.wattage * ( 365 * (+$('#Hours').val())) );
   //difference.yearlypowercost = ( halogenObj.yearlyconsumption * $KWH_Cost ) - ( ledObj.yearlyconsumption * $KWH_Cost ); 
+
   if ( halogenObj && ledObj ) {
-    $('.difference', '.lifespan').html(halogenObj.life - ledObj.life);
+    $('.difference', '.lifespan').html( ledObj.life - halogenObj.life );
     $('.difference', '.costperlight').html(halogenObj.cost - ledObj.cost);
     $('.difference', '.powerperlight').html(halogenObj.wattage - ledObj.wattage);
-    $('.difference', '.yearlyconsumption').html( Math.round ( ( halogenObj.yearlyconsumption - ledObj.yearlyconsumption ) * 100 )/ 100 );
+    $('.difference', '.yearlyconsumption').html( Math.round( halogenObj.yearlyconsumption - ledObj.yearlyconsumption ) * 100 )/ 100;
     $('.difference', '.yearlyemissions').html( Math.round( halogenObj.yearlyemissions - ledObj.yearlyemissions * 100 ) / 100 );
     $('.difference', '.yearlypowercost').html( Math.round( halogenObj.yearlypowercost - ledObj.yearlypowercost * 100 ) / 100 );
   }
+
 };
 
