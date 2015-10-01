@@ -16,72 +16,59 @@
         <% submit_tag "Calculate" %>
 
     <% end %>
+
     <!-- <p><input id="lights" type="number" placeholder="Number of lights" value=10></p> -->
     <!-- <p><input id="hours" type="number" placeholder="Hours" value=10></p> -->
     
       <select class="selectpicker halogen">
         <option>Please select current light</option>
-
-
       </select>
       <br>
   
         <select class="selectpicker led">
         <option>Please select new light</option>
-        <!--<option id="led01">240V 4W Candle LED</option>
-        <option>240V 10W Classic A LED</option>
-        <option>240V 6.5W Classic A LED</option>
-        <option>12V 6.5W MR16 GU5.3 LED</option>
-        <option>240V 8W R63 LED</option>
-        <option>240V 8W R63 LED</option>
-        <option>240V 8W PAR16 LED</option>
-        <option>240V 4W PAR16 LED'</option>
-        <option>240V 13.5W PAR30 LED</option>
-        <option>240V 18W PAR38 LED</option>
-        <option>12V 7W MR16 GU5.3 LED</option>
-        <option>12V 18W AR111 LED</option>-->
         
       </select>
 
     <div class="result">
 
       <p class="lifespan">
-        Lifespan: 
+        Lifespan (hours): 
         <span class="halogen_render"></span>
         <span class="leds_render"></span>
         <span class="difference"></span>
       </p>
 
       <p class="costperlight">
-        Cost Per Light: 
+        Cost Per Light ($): 
         <span class="halogen_render"></span>
         <span class="leds_render"></span>
         <span class="difference"></span>
       </p>
 
       <p class="powerperlight">
-        Power Per Light: 
+        Power Per Light (watts): 
         <span class="halogen_render"></span>
         <span class="leds_render"></span>
         <span class="difference"></span>
       </p>
 
       <p class="yearlyconsumption">
-        Yearly Consumption: 
+        Yearly Consumption (KWH): 
         <span class="halogen_render"></span>
         <span class="leds_render"></span>
         <span class="difference"></span>
       </p>
 
       <p class="yearlyemissions">
-        Yearly Emissions: 
+        Yearly Emissions (C02): 
         <span class="halogen_render"></span>
         <span class="leds_render"></span>
         <span class="difference"></span>
       </p>
       
       <p class="yearlypowercost">
-        <span>Yearly Power Cost: </span>
+        <span>Yearly Power Cost ($): </span>
         <span class="halogen_render"></span>
         <span class="leds_render"></span>
         <span class="difference"></span>
@@ -95,7 +82,7 @@
   </div>
 
   <div class="D3">
-    <h3>Working Chart</h3>
+    <h3>Compare Halogen and LED</h3>
     <canvas id="lights" width="550" height="500"></canvas>
   </div>
 

@@ -11,22 +11,22 @@
 		scaleBeginAtZero : true,
 
 		//Boolean - Whether grid lines are shown across the chart
-		scaleShowGridLines : true,
+		scaleShowGridLines : false,
 
 		//String - Colour of the grid lines
 		scaleGridLineColor : "rgba(0,0,0,.05)",
 
 		//Number - Width of the grid lines
-		scaleGridLineWidth : 1,
+		scaleGridLineWidth : 0,
 
 		//Boolean - Whether to show horizontal lines (except X axis)
 		scaleShowHorizontalLines: true,
 
 		//Boolean - Whether to show vertical lines (except Y axis)
-		scaleShowVerticalLines: true,
+		scaleShowVerticalLines: false,
 
 		//Boolean - If there is a stroke on each bar
-		barShowStroke : true,
+		barShowStroke : false,
 
 		//Number - Pixel width of the bar stroke
 		barStrokeWidth : 2,

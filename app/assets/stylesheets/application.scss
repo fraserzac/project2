@@ -2,7 +2,6 @@
 @import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-
 body {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
@@ -56,7 +55,6 @@ div.container-fluid {
 	width: 150px;
 	margin-bottom: 10px;
 }
-
 
 .post {
 	border-radius: 5px;
@@ -202,11 +200,10 @@ p {
 	line-height: 40px;
 	position: relative;
 	padding-left: 10px;
-	border: 1px solid black;
 }
 span.halogen_render, span.leds_render, span.difference {
 	top: 0;
-	border: 1px solid black;
+	border-left: 10px solid white;
 	height: 40px;
 	line-height: 20px;
 	color: white;
@@ -234,15 +231,14 @@ span.halogen_render, span.leds_render, span.difference {
 }
 .yearlypowercost {
 
-	background: #1c4a59;
+	background: #087f7e;/* #1c4a59*/
 }
 
 .lifespan:hover, .costperlight:hover, .yearlyconsumption:hover, .powerperlight:hover, .yearlyemissions:hover, .yearlypowercost:hover {
-	background: #1c4a59;
-
+	background: #999; /* 1c4a59 */
 }
 
-.lifespan:hover, .costperlight:hover, .yearlyconsumption:hover, .powerperlight:hover, .yearlyemissions:hover, .yearlypowercost:hover {
-	background: #1c4a59;
-
+.navbar img {
+	width: 25px;
+	margin: 0 auto;
 }
