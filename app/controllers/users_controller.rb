@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :check_if_logged_in, :only => [:edit, :followed]
+  before_action :check_if_logged_in, :only => [:edit]
 
   # GET /users
   # GET /users.json
@@ -65,13 +65,13 @@ class UsersController < ApplicationController
     redirect_to root_path unless @current_user.present?
   end
 
-  private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
       @user = User.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
+    private
     def user_params
       params.require(:user).permit(:username, :email, :password)
     end
