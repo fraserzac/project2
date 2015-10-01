@@ -137,10 +137,6 @@ canvas {
 	padding-top: 76px;
 }
 
-.lights {
-	background-color: white;
-}
-
 
 .bar {
   background: aquamarine;
@@ -206,10 +202,11 @@ p {
 	line-height: 40px;
 	position: relative;
 	padding-left: 10px;
+	border: 1px solid black;
 }
 span.halogen_render, span.leds_render, span.difference {
 	top: 0;
-	border-left: 10px solid white;
+	border: 1px solid black;
 	height: 40px;
 	line-height: 20px;
 	color: white;
