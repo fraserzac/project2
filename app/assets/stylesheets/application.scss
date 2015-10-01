@@ -147,28 +147,30 @@ input[type="number"] {
 	padding-left: 10px;
 }
 .halogen_render {
-	position: fixed;
+	position: absolute;
 	left: 200px;
 	line-height: 40px;
 }
 .leds_render {
-	position: fixed;
+	position: absolute;
 	left: 300px;
 }
 
 .difference {
-	position: fixed;
+	position: absolute;
 	left: 400px;
 }
 
 p {
 	background: gray;
 	line-height: 40px;
+	position: relative;
 	padding-left: 10px;
+	border: 1px solid black;
 }
 span.halogen_render, span.leds_render, span.difference {
-	
-	border-left: 1px solid white;
+	top: 0;
+	border: 1px solid black;
 	height: 40px;
 	line-height: 20px;
 	color: white;
