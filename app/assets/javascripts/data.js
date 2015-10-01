@@ -264,7 +264,7 @@ $(document).ready(function () {
 
     //console.log(info);
   })
-});
+}); 
 
 
 var updateHalogenStats = function() {
@@ -308,7 +308,7 @@ var updateDifferenceStats = function() {
   $('.difference', '.lifespan').html(halogenObj.life - ledObj.life);
   $('.difference', '.costperlight').html(halogenObj.cost - ledObj.cost);
   $('.difference', '.powerperlight').html(halogenObj.wattage - ledObj.wattage);
-  $('.difference', '.yearlyconsumption').html( Math.round ( ( halogenObj.yearlyconsumption - ledObj.yearlyconsumption ) * 100 )/ 100 );
+  $('.difference', '.yearlyconsumption').html( Math.round( ( halogenObj.yearlyconsumption - ledObj.yearlyconsumption ) * 100 )/ 100 );
   $('.difference', '.yearlyemissions').html( Math.round( halogenObj.yearlyemissions - ledObj.yearlyemissions * 100 ) / 100 );
   $('.difference', '.yearlypowercost').html( Math.round( halogenObj.yearlypowercost - ledObj.yearlypowercost * 100 ) / 100 );
 };
