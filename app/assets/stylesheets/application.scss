@@ -46,6 +46,17 @@ div.container-fluid {
 .top_div {
 }
 
+.selectpicker.halogen, .selectpicker.led {
+	margin-bottom: 10px;
+}
+
+#Number_lights, #Hours {
+	display: inline-block;
+	border-radius: 5px;
+	width: 150px;
+	margin-bottom: 10px;
+}
+
 
 .post {
 	border-radius: 5px;
@@ -93,7 +104,7 @@ div.container {
 .ajax {
 	height: 400px;
 	width: 48%;
-	margin-left: 100px;
+	margin-left: 150px;
 	margin-top: 50px;
 	margin-bottom: 50px;
 	border-radius: 10px;
@@ -119,11 +130,11 @@ div.container {
 canvas { 
 	background-color : white;
 	border-radius: 10px;
-	margin-right: 50px;
+	margin-right: 100px;
 }
 
 .D3 {
-
+	padding-top: 73px;
 	overflow: none;
 }
 
