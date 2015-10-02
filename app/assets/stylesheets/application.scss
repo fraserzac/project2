@@ -211,28 +211,28 @@ span.halogen_render, span.leds_render, span.difference {
 }
 
 .lifespan {
-
 	background: #278bd2;
+	opacity: 0.8;
 }
 .costperlight {
-
 	background: #e8074b;
+	opacity: 0.8;
 }
 .powerperlight {
-	
 	background: #FFC84A;
+	opacity: 0.8;
 }
 .yearlyconsumption {
-
 	background: #FE8900;
+	opacity: 0.8;
 }
 .yearlyemissions {
-
 	background: #0ec2a7;
+	opacity: 0.8;
 }
 .yearlypowercost {
-
 	background: #087f7e;/* #1c4a59*/
+	opacity: 0.8;
 }
 
 .lifespan:hover, .costperlight:hover, .yearlyconsumption:hover, .powerperlight:hover, .yearlyemissions:hover, .yearlypowercost:hover {
