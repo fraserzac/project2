@@ -22,12 +22,24 @@ body {
   	margin: 0 auto;
 }
 
-.contact_us {
-	width: 45%;
-	height: 300px;
+#user_username, #user_email, #user_password {
 	text-align: center;
-	display: inline-block;
+	border-radius: 5px;
+	margin-bottom: 15px;
 }
+
+.contact_us {
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+}
+
+#contact_name, #contact_email, #contact_message {
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
 
 div.container-fluid {
 	width: 100%;
@@ -35,15 +47,15 @@ div.container-fluid {
 
 .login_div {
 	margin: 0 auto;
-	margin-top: 100px;
-	text-align: center;
-	width: 45%;
-	height: 300px;
-	padding-top: 50px;
+	display: inline-block;
 }
 
-.top_div {
+#email, #password {
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 15px;
 }
+
 
 .selectpicker.halogen, .selectpicker.led {
 	margin-bottom: 10px;
@@ -70,8 +82,8 @@ div.container-fluid {
 }
 
 .new_user {
-	width: 40%;
 	margin: 0 auto;
+	display: inline-block;
 }
 
 .post_text {
@@ -103,7 +115,8 @@ div.container {
 	height: 400px;
 	width: 48%;
 	margin-left: 150px;
-	margin-top: 50px;
+	margin-top: 80px;
+	text-align: center;
 	margin-bottom: 50px;
 	border-radius: 10px;
 	background-color: white;
