@@ -14,13 +14,13 @@
 		scaleShowGridLines : false,
 
 		//String - Colour of the grid lines
-		scaleGridLineColor : "rgba(0,0,0,.05)",
+		scaleGridLineColor : "rgba(0,0,0,0)",
 
 		//Number - Width of the grid lines
 		scaleGridLineWidth : 0,
 
 		//Boolean - Whether to show horizontal lines (except X axis)
-		scaleShowHorizontalLines: true,
+		scaleShowHorizontalLines: false,
 
 		//Boolean - Whether to show vertical lines (except Y axis)
 		scaleShowVerticalLines: false,
